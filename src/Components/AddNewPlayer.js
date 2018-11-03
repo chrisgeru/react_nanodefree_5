@@ -13,11 +13,10 @@ export class AddNewPlayer extends Component {
   };
 
   hasUniqueUserName = () => {
-    let playerFound = false;
     for (let player of this.props.playerList) {
-      playerFound = player.userName === this.state.userName;
+      if (player.userName === this.state.userName) {return true};
     }
-    return playerFound;
+    return false;
   };
 
   state = {
