@@ -101,3 +101,8 @@ button:disabled {
     margin-left: 3px;
     margin-right: 3px;
 }
+
+.formError {
+    border-color: red;
+    color: red;
+}
